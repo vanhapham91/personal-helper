@@ -8,8 +8,8 @@ import {
 
 import './App.css';
 
-import TimesheetPage from './pages/timesheet';
-import HomePage from './pages/home';
+import TimesheetPage from './pages/Timesheet';
+import HomePage from './pages/Home';
 
 function App() {
   return (
