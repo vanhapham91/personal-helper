@@ -8,7 +8,7 @@
   border: 1px solid black;
 }
 
-.heading {
+.table .header {
   text-align: center;
   font-weight: bold;
   background-color: aqua;
@@ -93,4 +93,13 @@
 
 .modal--body .full input {
   flex: 1;
+}
+
+.modal--section {
+  position: relative;
+}
+
+.icon-close:after{
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
 }
