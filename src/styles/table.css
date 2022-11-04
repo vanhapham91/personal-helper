@@ -31,12 +31,12 @@
   position: relative;
   top: 0;
   transform: translateY(50%);
+  border-radius: 5px;
   padding: 20px 30px;
   margin: auto;
   width: 50%;
   max-width: 400px;
   background-color: white;
-  box-shadow: 5px 4px 10px 0 #cecece;
 }
 
 .form--field {
@@ -102,4 +102,13 @@
 .icon-close:after{
   display: inline-block;
   content: "\00d7"; /* This will render the 'X' */
+}
+
+.modal--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
 }

@@ -46,6 +46,7 @@ const TimesheetForm = (props: {
     formContent = (
       <>
         <div className="modal--wrapper">
+          <div className="modal--overlay" onClick={onToggleForm}></div>
           <div className="timesheet-form">
             <div className="modal--section modal--header heading">
               <h4>Add new task</h4>
