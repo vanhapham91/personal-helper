@@ -1,8 +1,9 @@
 body {
   position: relative;
-
+  font-family: 'Nunito', sans-serif;
 }
 
+
 .container {
-  margin: 1em;
+  margin: 0 1.5em;
 }
