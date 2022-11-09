@@ -4,6 +4,8 @@
   color: black;
   outline: none;
   box-shadow: none;
+  padding: 0.5em 1em;
+  margin: 1em;
 }
 
 .button.rounded {
@@ -15,7 +17,11 @@
   border-radius: 50%;
 }
 
-.close-btn {
+.button:hover {
+  cursor: pointer;
+}
+
+.button--circle {
   position: absolute;
   top: 11px;
   right: 10px;
@@ -23,3 +29,9 @@
   height: 25px;
   padding: 5px;
 }
+
+.button--primary {
+  background-color: #9FD356;
+  color: white;
+}
+

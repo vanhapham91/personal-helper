@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: 60px repeat(4, minmax(max-content, 1fr)) 12fr;
+  border: 1px solid black;
+}
+
+.table .header {
+  text-align: center;
+  font-weight: bold;
+  background-color: aqua;
+}
+
+.cell {
+  padding: 0.5em 1em;
+  border: 1px solid black;
+}
