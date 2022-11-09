@@ -25,9 +25,7 @@ function App() {
   );
 }
 
-// TODO: Move table to table component
-// TODO: Create table component?
-// TODO: Create another modal content?
 // TODO: Separate general css and component css
-
+// TODO: Add field component + required attribute
+// TODO: Add error when task field is empty = disable add button
 export default App;
