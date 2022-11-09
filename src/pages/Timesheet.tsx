@@ -6,6 +6,7 @@ import TimesheetForm from '../components/TimesheetForm';
 import TimesheetTable from '../components/TimesheetTable';
 
 import '../styles/base/table.css';
+import '../styles/pages/timesheet.css';
 
 const TimesheetPage = () => {
   const getTaskList = (): Task[] => {
@@ -63,11 +64,8 @@ const TimesheetPage = () => {
   return (
     <div className="container">
       <div className="timesheet-table--header flex">
-        <div className="page-title">
-          <span>Today's timesheet</span>
-          <button type="button" className="button" onClick={openModal}>Log my hour</button>
-        </div>
-
+        <h4 className="page-title">Today's timesheet</h4>
+        <button type="button" className="button button--primary button--rounded add-task-button" onClick={openModal}>Log my hour</button>
       </div>
       <TimesheetTable
         taskList={taskList}

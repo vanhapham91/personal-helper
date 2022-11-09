@@ -59,8 +59,8 @@ const TimesheetForm = (props: {
       </div>
 
       <div className="action-buttons">
-        <button type="button" className="button rounded" onClick={submitForm}>Add</button>
-        <button type="button" className="button rounded" onClick={onCloseForm}>Cancel</button>
+        <button type="button" className="button button--rounded" onClick={submitForm}>Add</button>
+        <button type="button" className="button button--rounded" onClick={onCloseForm}>Cancel</button>
       </div>
     </>
   );

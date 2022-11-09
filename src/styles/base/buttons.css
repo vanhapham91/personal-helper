@@ -1,18 +1,22 @@
 .button {
-  border: solid 1px black;
   background-color: white;
   color: black;
   outline: none;
+  border: 1px solid transparent;
   box-shadow: none;
   padding: 0.5em 1em;
   margin: 1em;
 }
 
-.button.rounded {
+.button--rounded {
   border-radius: 3px;
 }
 
-.button.transparent {
+.button--circle {
+  border-radius: 50%;
+}
+
+.button--transparent {
   border: 1px solid #cecece;
   border-radius: 50%;
 }
@@ -21,17 +25,17 @@
   cursor: pointer;
 }
 
-.button--circle {
+.button--absolute {
   position: absolute;
-  top: 11px;
-  right: 10px;
+  top: 0;
+  right: 0;
   width: 25px;
   height: 25px;
   padding: 5px;
 }
 
 .button--primary {
-  background-color: #9FD356;
-  color: white;
+  background-color: #cae7b9;
+  color: #243e36;
 }
 

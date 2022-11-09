@@ -22,11 +22,11 @@ const Modal = (props: ModalProps) => {
         <div className="modal--wrapper">
           <div className="modal--overlay" onClick={onClose}></div>
           <div className="timesheet-form">
+            <button type="button" className="button button-transparent button--absolute button--circle button-close" onClick={onClose}>
+              <span className="icon-close"></span>
+            </button>
             <div className="modal--section modal--header heading">
               <ModalHeader/>
-              <button type="button" className="button transparent button--circle">
-                <span className="icon-close" onClick={onClose}></span>
-              </button>
             </div>
             <div className="modal--section modal--body">
               <ModalContent/>

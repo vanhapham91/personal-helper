@@ -1,0 +1,11 @@
+.timesheet-table--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.add-task-button {
+  margin-right: 0;
+  font-weight: 600;
+}

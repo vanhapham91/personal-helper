@@ -95,4 +95,6 @@
   height: 20px;
 }
 
-
+.button-close:hover {
+  border-color: black;
+}
