@@ -1,18 +1,19 @@
+import React from 'react';
 import '../../styles/modal.css';
 
 type ModalProps = {
   isOpen: boolean,
   onClose: () => void,
-  header: JSX.Element,
-  body: JSX.Element,
+  ModalHeader: React.ComponentType,
+  ModalContent: React.ComponentType,
 }
 
 const Modal = (props: ModalProps) => {
   const {
     isOpen,
     onClose,
-    header,
-    body,
+    ModalHeader,
+    ModalContent
   } = props;
 
   return (
@@ -22,13 +23,13 @@ const Modal = (props: ModalProps) => {
           <div className="modal--overlay" onClick={onClose}></div>
           <div className="timesheet-form">
             <div className="modal--section modal--header heading">
-              { header }
+              <ModalHeader/>
               <button type="button" className="button transparent button--circle">
                 <span className="icon-close" onClick={onClose}></span>
               </button>
             </div>
             <div className="modal--section modal--body">
-              { body }
+              <ModalContent/>
             </div>
           </div>
         </div>

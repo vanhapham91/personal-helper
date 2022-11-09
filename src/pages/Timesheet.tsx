@@ -57,8 +57,8 @@ const TimesheetPage = () => {
     localStorage.setItem('tasks', JSON.stringify(newTaskList));
   }
 
-  const modalHeader = (<h4 className="header">Add new task</h4>);
-  const modalContent = (<TimesheetForm onFormSubmit={addTask} onCloseForm={closeModal}/>);
+  const modalHeader = () => (<h4 className="header">Add new task</h4>);
+  const modalContent = () => (<TimesheetForm onFormSubmit={addTask} onCloseForm={closeModal}/>);
 
   return (
     <div className="container">
@@ -78,8 +78,8 @@ const TimesheetPage = () => {
       <Modal
         isOpen={isFormOpen}
         onClose={closeModal}
-        header={modalHeader}
-        body={modalContent}
+        ModalHeader={modalHeader}
+        ModalContent={modalContent}
       />
     </div>
   );
